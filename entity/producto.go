@@ -1,7 +1,7 @@
-package main
+package entity
 
-type producto struct {
-	id     int
-	nombre string
-	precio float64
+type Producto struct {
+	Id     int
+	Nombre string
+	Precio float64
 }

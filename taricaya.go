@@ -3,17 +3,18 @@ package main
 import (
 	"fmt"
 
+	"entity"
 	"html/template"
 	"net/http"
 )
 
-type producto struct {
-	nombre string
-	precio float64
-}
+//type producto struct {
+//	nombre string
+//	precio float64
+//}
 
 func test1(w http.ResponseWriter, r *http.Request) {
-	p := producto{"Ungüento", 15.30}
+	p := entity.Producto{0, "Ungüento", 15.30}
 	fmt.Fprint(w, p)
 
 }
